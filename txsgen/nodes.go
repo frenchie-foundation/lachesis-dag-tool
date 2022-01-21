@@ -8,7 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/ethclient"
 
-	"github.com/Fantom-foundation/lachesis-dag-tool/txsgen/utils"
+	"github.com/frenchie-foundation/lachesis-dag-tool/txsgen/utils"
 )
 
 // Nodes pool.

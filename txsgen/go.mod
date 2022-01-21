@@ -1,4 +1,4 @@
-module github.com/Fantom-foundation/lachesis-dag-tool/txsgen
+module github.com/frenchie-foundation/lachesis-dag-tool/txsgen
 
 go 1.15
 
@@ -12,4 +12,8 @@ require (
 
 replace gopkg.in/urfave/cli.v1 => github.com/urfave/cli v1.20.0
 
-replace github.com/ethereum/go-ethereum => github.com/Fantom-foundation/go-ethereum v1.9.7-0.20210531094457-b859cd9c4511
+replace github.com/ethereum/go-ethereum => github.com/frenchie-foundation/go-ethereum v1.9.7-0.20210531094457-b859cd9c4511
+
+replace github.com/Fantom-foundation/go-opera => github.com/frenchie-foundation/go-opera v0.0.0-20210621102035-55aaa977f8f5
+
+replace github.com/Fantom-foundation/lachesis-base => github.com/frenchie-foundation/lachesis-base v0.0.0-20210420092627-c16f01e35562

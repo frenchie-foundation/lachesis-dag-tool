@@ -16,7 +16,7 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/ethclient"
 
-	"github.com/Fantom-foundation/lachesis-dag-tool/txsgen/ballot"
+	"github.com/frenchie-foundation/lachesis-dag-tool/txsgen/ballot"
 )
 
 var ballotOptions = [][32]byte{

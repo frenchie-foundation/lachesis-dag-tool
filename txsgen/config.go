@@ -7,7 +7,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"gopkg.in/urfave/cli.v1"
 
-	"github.com/Fantom-foundation/lachesis-dag-tool/txsgen/utils/toml"
+	"github.com/frenchie-foundation/lachesis-dag-tool/txsgen/utils/toml"
 )
 
 var ConfigFileFlag = cli.StringFlag{
