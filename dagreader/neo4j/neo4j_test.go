@@ -7,7 +7,7 @@ import (
 	"github.com/Fantom-foundation/lachesis-base/hash"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Fantom-foundation/lachesis-dag-tool/dagreader/internal"
+	"github.com/frenchie-foundation/lachesis-dag-tool/dagreader/internal"
 )
 
 func TestNeo4jMarshaling(t *testing.T) {

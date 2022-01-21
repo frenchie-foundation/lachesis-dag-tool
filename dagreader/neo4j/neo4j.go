@@ -14,7 +14,7 @@ import (
 	"github.com/neo4j/neo4j-go-driver/neo4j"
 	"github.com/paulbellamy/ratecounter"
 
-	"github.com/Fantom-foundation/lachesis-dag-tool/dagreader/internal"
+	"github.com/frenchie-foundation/lachesis-dag-tool/dagreader/internal"
 )
 
 const (

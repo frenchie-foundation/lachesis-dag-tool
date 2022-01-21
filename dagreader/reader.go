@@ -16,7 +16,7 @@ import (
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/Fantom-foundation/lachesis-dag-tool/dagreader/internal"
+	"github.com/frenchie-foundation/lachesis-dag-tool/dagreader/internal"
 )
 
 type DagReader struct {

@@ -7,7 +7,7 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/urfave/cli"
 
-	"github.com/Fantom-foundation/lachesis-dag-tool/dagreader/neo4j"
+	"github.com/frenchie-foundation/lachesis-dag-tool/dagreader/neo4j"
 )
 
 var (

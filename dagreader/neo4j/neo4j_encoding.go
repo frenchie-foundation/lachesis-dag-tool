@@ -11,7 +11,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/neo4j/neo4j-go-driver/neo4j"
 
-	"github.com/Fantom-foundation/lachesis-dag-tool/dagreader/internal"
+	"github.com/frenchie-foundation/lachesis-dag-tool/dagreader/internal"
 )
 
 type fields map[string]interface{}

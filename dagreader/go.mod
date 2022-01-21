@@ -1,4 +1,4 @@
-module github.com/Fantom-foundation/lachesis-dag-tool/dagreader
+module github.com/frenchie-foundation/lachesis-dag-tool/dagreader
 
 go 1.14
 
@@ -16,6 +16,8 @@ require (
 )
 
 replace (
-	github.com/ethereum/go-ethereum => github.com/Fantom-foundation/go-ethereum v1.9.7-0.20210817093144-c7491520e043
+	github.com/Fantom-foundation/lachesis-base => github.com/frenchie-foundation/lachesis-base v0.0.0-20210420092627-c16f01e35562
+	github.com/Fantom-foundation/go-opera => github.com/frenchie-foundation/go-opera v0.0.0-20210621102035-55aaa977f8f5
+	github.com/ethereum/go-ethereum => github.com/frenchie-foundation/go-ethereum v1.9.7-0.20210531094457-b859cd9c4511
 	gopkg.in/urfave/cli.v1 => github.com/urfave/cli v1.20.0
 )
