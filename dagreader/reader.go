@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Fantom-foundation/go-opera/ftmclient"
+	"github.com/Fantom-foundation/go-opera/frenclient"
 	"github.com/Fantom-foundation/go-opera/inter"
 	"github.com/Fantom-foundation/go-opera/logger"
 	"github.com/Fantom-foundation/lachesis-base/hash"
@@ -64,7 +64,7 @@ func (r *DagReader) background(dagStart idx.Block) {
 	defer r.Log.Info("stopped")
 
 	var (
-		client   *ftmclient.Client
+		client   *frenclient.Client
 		err      error
 		maxBlock = big.NewInt(0)
 		sbscr    ethereum.Subscription
@@ -139,7 +139,7 @@ func (r *DagReader) background(dagStart idx.Block) {
 	}
 }
 
-func (s *DagReader) readEvents(n *big.Int, client *ftmclient.Client, was0 map[hash.Event]struct{}) (was1 map[hash.Event]struct{}, err error) {
+func (s *DagReader) readEvents(n *big.Int, client *frenclient.Client, was0 map[hash.Event]struct{}) (was1 map[hash.Event]struct{}, err error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 12*time.Second)
 	blk, err := client.BlockByNumber(ctx, n)
 	cancel()
@@ -224,8 +224,8 @@ func notFoundEvent(id hash.Event) inter.EventI {
 	return &e.Build().Event
 }
 
-func (s *DagReader) connect() (*ftmclient.Client, error) {
-	client, err := ftmclient.Dial(s.url)
+func (s *DagReader) connect() (*frenclient.Client, error) {
+	client, err := frenclient.Dial(s.url)
 	if err != nil {
 		s.Log.Error("connect to", "url", s.url, "err", err)
 		return nil, err
@@ -234,7 +234,7 @@ func (s *DagReader) connect() (*ftmclient.Client, error) {
 	return client, nil
 }
 
-func (s *DagReader) subscribe(client *ftmclient.Client, headers chan *types.Header) (sbscr ethereum.Subscription, err error) {
+func (s *DagReader) subscribe(client *frenclient.Client, headers chan *types.Header) (sbscr ethereum.Subscription, err error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
 	defer cancel()
 
